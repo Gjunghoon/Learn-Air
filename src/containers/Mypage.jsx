@@ -59,7 +59,7 @@ const Mypage = () => {
             <span>{classPast.title}</span>
             <div>
               <div>수업 확인</div>
-              <div>리뷰작성</div>
+              <div onClick={() => history.push("/review")}>리뷰작성</div>
             </div>
           </ClassCard>
         ))}

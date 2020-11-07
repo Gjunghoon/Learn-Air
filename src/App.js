@@ -5,6 +5,7 @@ import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Class from "./containers/Class";
 import Category from "./containers/Category";
+import Search from "./containers/Search";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
           </Route>
           <Route exact path="/category">
             <Category />
+          </Route>
+          <Route exact path="/search">
+            <Search />
           </Route>
         </Switch>
       </Router>

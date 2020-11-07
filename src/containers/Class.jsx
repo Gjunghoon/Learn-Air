@@ -87,7 +87,7 @@ export default Class;
 
 const Container = styled.div`
   background-color: #5aa6c8;
-  height: 100vh;
+  height: 100%;
   padding: 0 0.5rem;
 `;
 
@@ -298,7 +298,7 @@ const SelectBox = styled.div`
   background-color: rgba(0, 0, 0, 0.16);
 `;
 
-const ApplyButton = styled.div`
+export const ApplyButton = styled.div`
   width: 100%;
   height: 3.563rem;
   border-radius: 13px;

@@ -30,12 +30,13 @@ const Home = () => {
         <HamburgerSVG />
         <MainTitle>Learn Air</MainTitle>
         <MainSubtitle>온라인 퍼스널 레슨 플랫폼</MainSubtitle>
-        <SearchBox>
-          <input
-            type="text"
-            placeholder="어떤 수업을 원하시나요?"
-            onSubmit={(e) => console.log(e.target.value)}
-          />
+        <SearchBox
+          onSubmit={(e) => {
+            e.preventDefault();
+            history.push("/search");
+          }}
+        >
+          <input type="text" placeholder="어떤 수업을 원하시나요?" />
         </SearchBox>
         <Event>
           <EventMessage>Learn-Air가 쏜다! 회원가입 이벤트</EventMessage>
@@ -109,7 +110,7 @@ const MainSubtitle = styled.div`
   margin-bottom: 1.438rem;
 `;
 
-const SearchBox = styled.div`
+const SearchBox = styled.form`
   > input {
     width: 20.25rem;
     height: 3rem;

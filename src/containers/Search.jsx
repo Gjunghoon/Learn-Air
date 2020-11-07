@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { LeftArrowSVG, HamburgerSVG } from "../assets";
+import { ApplyButton } from "./Class";
 
 const tutors = [
   {
@@ -30,7 +31,7 @@ const tutors = [
   },
 ];
 
-const Category = () => {
+const Search = () => {
   const history = useHistory();
 
   return (
@@ -39,21 +40,13 @@ const Category = () => {
         <div onClick={() => history.goBack()}>
           <LeftArrowSVG />
         </div>
-        <span onClick={() => history.push("/category")}>Music Category</span>
+        <span onClick={() => history.push("/category")}>Search</span>
         <div>
           <HamburgerSVG />
         </div>
       </Header>
       <Wrapper>
-        <MainTutor onClick={() => history.push("/class")}>
-          <div>
-            <div></div>
-            <span>어쿠스틱 기타 연주</span>
-          </div>
-          <img src="https://gjunghoon-tinder-clone.s3.ap-northeast-2.amazonaws.com/tae-woo.jpg" />
-          <span>한태우 튜터</span>
-          <span>지금 25,000원</span>
-        </MainTutor>
+        <SearchBox>기타</SearchBox>
         {tutors.map((tutor, index) => (
           <Tutor onClick={() => history.push("/class")}>
             <Img src={tutor.tutorImageURL} />
@@ -67,18 +60,22 @@ const Category = () => {
             </div>
           </Tutor>
         ))}
+        <ApplyButton onClick={() => history.push("/")}>
+          메인으로 돌아가기
+        </ApplyButton>
       </Wrapper>
     </Container>
   );
 };
 
-export default Category;
+export default Search;
 
 const Container = styled.div`
   background-color: #5aa6c8;
   height: 100%;
   padding: 0 0.5rem;
 `;
+
 const Header = styled.div`
   width: 100%;
   height: 5rem;
@@ -114,56 +111,17 @@ const Wrapper = styled.div`
   padding: 0.5rem;
 `;
 
-const MainTutor = styled.div`
-  width: 21.5rem;
-  height: 19.875rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+const SearchBox = styled.div`
+  width: 20.25rem;
+  height: 3rem;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  border: solid 1px #5aa6c8;
   background-color: #ffffff;
-  padding: 0.813rem;
-  cursor: pointer;
-  > div {
-    display: flex;
-    align-items: center;
-    height: 4.25rem;
-    > div {
-      width: 2.5rem;
-      height: 2.5rem;
-      background-color: #8ca6ec;
-      border-radius: 50%;
-    }
-    > span {
-      font-size: 1.375rem;
-      font-weight: 800;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.14;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000000;
-      margin-left: 1rem;
-    }
-  }
-  > img {
-    width: 20.063rem;
-    height: 12.5rem;
-    margin-bottom: 0.25rem;
-  }
-  > span {
-    font-size: 1.125rem;
-    font-weight: 700;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.11;
-    letter-spacing: normal;
-    text-align: center;
-    color: #374761;
-    padding: 1rem;
-    &:last-child {
-      margin-left: 3rem;
-    }
-  }
-  margin-bottom: 0.625rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
 `;
 
 const Tutor = styled.div`

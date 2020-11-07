@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="star-24px" width="12" height="12" viewBox="0 0 12 12">
+    <defs>
+        <style>
+            .full-star-1{fill:none}
+        </style>
+    </defs>
+    <g id="Bounding_Boxes">
+        <path id="패스_37" d="M0 0h12v12H0z" class="full-star-1"/>
+        <path id="패스_38" d="M0 0h12v12H0z" class="full-star-1"/>
+    </g>
+    <g id="Rounded" transform="translate(1.722 1.786)">
+        <path id="패스_39" fill="#579aca" d="M7.722 10.421L9.8 11.676a.5.5 0 0 0 .745-.54l-.55-2.36 1.835-1.59a.5.5 0 0 0-.285-.875l-2.415-.2-.945-2.23a.5.5 0 0 0-.92 0L6.317 6.1l-2.415.2a.5.5 0 0 0-.285.875l1.835 1.59-.55 2.36a.5.5 0 0 0 .745.54z" transform="translate(-3.443 -3.573)"/>
+    </g>
+</svg>

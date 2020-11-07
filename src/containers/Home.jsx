@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import { UndrawResearchingSVG } from "../assets";
+import { UndrawResearchingSVG, PlayButtonSVG, HamburgerSVG } from "../assets";
 
 const categories = [
   {
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <Container>
       <Main>
-        <TopRightSVG>svg</TopRightSVG>
+        <HamburgerSVG />
         <MainTitle>Learn Air</MainTitle>
         <MainSubtitle>온라인 퍼스널 레슨 플랫폼</MainSubtitle>
         <SearchBox>
@@ -54,7 +54,7 @@ const Home = () => {
                 <Subtitle>{category.subtitle}</Subtitle>
                 <Title>{category.title}</Title>
               </div>
-              <div>svg</div>
+              <PlayButtonSVG />
             </Class>
           ))}
         </ClassWrapper>
@@ -65,25 +65,26 @@ const Home = () => {
 
 export default Home;
 
-const Container = styled.div``;
+const Container = styled.div`
+  position: relative;
+`;
 
 const Main = styled.div`
   padding: 1.875rem;
-  background-color: #579aca;
-`;
-
-const TopRightSVG = styled.div`
-  width: 2.75rem;
-  height: 2.75rem;
-  opacity: 0.3;
-  border-radius: 11px;
-  background-color: #ffffff;
-  margin-left: auto;
+  background-color: #5aa6c8;
+  border-radius: 0 0 4rem 5rem;
+  height: 26rem;
+  margin-bottom: 3rem;
+  > svg {
+    margin-left: 86%;
+    z-index: 2;
+    position: relative;
+  }
 `;
 
 const MainTitle = styled.div`
   font-size: 2.125rem;
-  font-weight: normal;
+  font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.21;
@@ -94,7 +95,7 @@ const MainTitle = styled.div`
 `;
 const MainSubtitle = styled.div`
   font-size: 1.375rem;
-  font-weight: normal;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.86;
@@ -154,7 +155,7 @@ const EventMessage = styled.div`
   width: 10rem;
   height: 3rem;
   font-size: 1.25rem;
-  font-weight: normal;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -196,7 +197,7 @@ const Categories = styled.div`
 
   > h2 {
     font-size: 1.125rem;
-    font-weight: normal;
+    font-weight: 800;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.22;
@@ -246,6 +247,9 @@ const Class = styled.div`
     display: flex;
     flex-direction: column;
   }
+  > svg {
+    margin-left: auto;
+  }
   cursor: pointer;
 `;
 
@@ -261,7 +265,7 @@ const Subtitle = styled.span`
 `;
 const Title = styled.span`
   font-size: 1.125rem;
-  font-weight: normal;
+  font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.22;

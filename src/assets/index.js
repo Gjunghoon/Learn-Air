@@ -1,1 +1,9 @@
 export { ReactComponent as UndrawResearchingSVG } from "./undraw_researching_22gp.svg";
+export { ReactComponent as RightArrowSVG } from "./rightArrow.svg";
+export { ReactComponent as LeftArrowSVG } from "./leftArrow.svg";
+export { ReactComponent as EmptyStarSVG } from "./star_border-24px.svg";
+export { ReactComponent as HalfStarSVG } from "./star_half-24px.svg";
+export { ReactComponent as FullStarSVG } from "./star-24px.svg";
+export { ReactComponent as HamburgerSVG } from "./hamburger.svg";
+export { ReactComponent as PlayButtonSVG } from "./playButton.svg";
+export { ReactComponent as BlogBackgroundSVG } from "./blob-2.svg";

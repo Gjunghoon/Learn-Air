@@ -135,6 +135,7 @@ const SearchBox = styled.div`
 const Event = styled.div`
   padding: 1.688rem 1.75rem;
   box-sizing: border-box;
+  position: relative;
 
   > svg {
     width: 8.213rem;

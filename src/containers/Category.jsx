@@ -39,7 +39,7 @@ const Category = () => {
         <div onClick={() => history.goBack()}>
           <LeftArrowSVG />
         </div>
-        <span>Music Category</span>
+        <span onClick={() => history.push("/category")}>Music Category</span>
         <div>
           <HamburgerSVG />
         </div>

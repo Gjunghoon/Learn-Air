@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <Container>
       <Main>
-        <HamburgerSVG />
+        <HamburgerSVG onClick={() => history.push("/mypage")} />
         <MainTitle>Learn Air</MainTitle>
         <MainSubtitle>온라인 퍼스널 레슨 플랫폼</MainSubtitle>
         <SearchBox
@@ -84,6 +84,7 @@ const Main = styled.div`
     margin-left: 86%;
     z-index: 2;
     position: relative;
+    cursor: pointer;
   }
 `;
 
@@ -146,6 +147,7 @@ const Event = styled.div`
     position: absolute;
     bottom: 2rem;
     right: -1rem;
+    cursor: pointer;
   }
 
   width: 20.25rem;

@@ -6,6 +6,8 @@ import Login from "./containers/Login";
 import Class from "./containers/Class";
 import Category from "./containers/Category";
 import Search from "./containers/Search";
+import Mypage from "./containers/Mypage";
+import Review from "./containers/Review";
 
 const App = () => {
   return (
@@ -26,6 +28,12 @@ const App = () => {
           </Route>
           <Route exact path="/search">
             <Search />
+          </Route>
+          <Route exact path="/mypage">
+            <Mypage />
+          </Route>
+          <Route exact path="/review">
+            <Review />
           </Route>
         </Switch>
       </Router>

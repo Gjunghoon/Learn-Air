@@ -1,13 +1,20 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import { LeftArrowSVG, HamburgerSVG } from "../assets";
 
 const Login = () => {
+  const history = useHistory();
   return (
     <Container>
       <Header>
-        <div>leftsvg</div>
-        <span>Log In</span>
-        <div>hamburgersvg</div>
+        <div onClick={() => history.goBack()}>
+          <LeftArrowSVG />
+        </div>
+        <span>Login</span>
+        <div>
+          <HamburgerSVG />
+        </div>
       </Header>
       <Wrapper>
         <Message>
@@ -39,7 +46,7 @@ const Container = styled.div``;
 
 const Header = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px #53595d;
   height: 6rem;
@@ -52,6 +59,16 @@ const Header = styled.div`
     letter-spacing: normal;
     text-align: left;
     color: #305f72;
+  }
+  > div {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 11px;
+    background-color: #5aa6c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 `;
 const Wrapper = styled.div`

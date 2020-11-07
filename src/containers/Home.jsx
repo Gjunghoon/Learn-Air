@@ -31,7 +31,11 @@ const Home = () => {
         <MainTitle>Learn Air</MainTitle>
         <MainSubtitle>온라인 퍼스널 레슨 플랫폼</MainSubtitle>
         <SearchBox>
-          <input type="text" placeholder="어떤 수업을 원하시나요?" />
+          <input
+            type="text"
+            placeholder="어떤 수업을 원하시나요?"
+            onSubmit={(e) => console.log(e.target.value)}
+          />
         </SearchBox>
         <Event>
           <EventMessage>Learn-Air가 쏜다! 회원가입 이벤트</EventMessage>
@@ -42,10 +46,10 @@ const Home = () => {
       <Categories>
         <h2>온라인 레슨 카테고리</h2>
         <CategorySelectBox>
-          <Category>음악</Category>
-          <Category>학습</Category>
-          <Category>회화</Category>
-          <Category>디자인</Category>
+          <Category onClick={() => history.push("/category")}>음악</Category>
+          <Category onClick={() => history.push("/category")}>학습</Category>
+          <Category onClick={() => history.push("/category")}>회화</Category>
+          <Category onClick={() => history.push("/category")}>디자인</Category>
         </CategorySelectBox>
         <ClassWrapper>
           {categories.map((category, index) => (

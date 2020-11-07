@@ -49,7 +49,7 @@ const Home = () => {
         </CategorySelectBox>
         <ClassWrapper>
           {categories.map((category, index) => (
-            <Class>
+            <Class onClick={() => history.push("/class")}>
               <div>
                 <Subtitle>{category.subtitle}</Subtitle>
                 <Title>{category.title}</Title>

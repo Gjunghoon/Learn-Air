@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Class from "./containers/Class";
+import Category from "./containers/Category";
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
           </Route>
           <Route exact path="/class">
             <Class />
+          </Route>
+          <Route exact path="/category">
+            <Category />
           </Route>
         </Switch>
       </Router>

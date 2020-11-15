@@ -77,7 +77,14 @@ const Class = () => {
             <SelectBox>튜터 SNS</SelectBox>
           </div>
         </AnotherDescription>
-        <ApplyButton>지금 신청하기</ApplyButton>
+        <ApplyButton
+          onClick={() =>
+            (window.location.href =
+              "https://zoom.us/j/99812755060?pwd=UmVPSHpnWmZ1UDBrNDFUbXR1TXRkdz09")
+          }
+        >
+          지금 신청하기
+        </ApplyButton>
       </Wrapper>
     </Container>
   );

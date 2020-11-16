@@ -80,7 +80,7 @@ const Class = () => {
         <ApplyButton
           onClick={() =>
             (window.location.href =
-              "https://zoom.us/j/99812755060?pwd=UmVPSHpnWmZ1UDBrNDFUbXR1TXRkdz09")
+              "https://zoom.us/j/99171751903?pwd=MlVrWTFyNDN0RVVZeTFDdHBEd3BQdz09")
           }
         >
           지금 신청하기

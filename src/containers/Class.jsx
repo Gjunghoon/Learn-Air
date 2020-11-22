@@ -32,12 +32,8 @@ const Class = () => {
   } = sampleClass;
   const history = useHistory();
   const applyClass = () => {
-    if (document.cookie.split("logined=").includes("true")) {
-      window.location.href =
-        "https://zoom.us/j/99171751903?pwd=MlVrWTFyNDN0RVVZeTFDdHBEd3BQdz09";
-    } else {
-      history.push("/login");
-    }
+    window.location.href =
+      "https://zoom.us/j/99171751903?pwd=MlVrWTFyNDN0RVVZeTFDdHBEd3BQdz09";
   };
   return (
     <Container>

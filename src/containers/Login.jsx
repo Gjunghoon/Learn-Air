@@ -7,7 +7,7 @@ const Login = () => {
   const history = useHistory();
   const kakaoLogin = () => {
     window.Kakao.Auth.authorize({
-      redirectUri: "http://localhost:3001/kakao",
+      redirectUri: "http://3.35.134.21:3001/kakao",
     });
   };
 

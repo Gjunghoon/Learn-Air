@@ -5,6 +5,12 @@ import { LeftArrowSVG, HamburgerSVG } from "../assets";
 
 const Login = () => {
   const history = useHistory();
+  const kakaoLogin = () => {
+    window.Kakao.Auth.authorize({
+      redirectUri: "http://localhost:3001/kakao",
+    });
+  };
+
   return (
     <Container>
       <Header>
@@ -21,7 +27,9 @@ const Login = () => {
           <div>간편하게 로그인하고</div>
           <div>다양한 튜터를 만나보세요</div>
         </Message>
-        <KakaoLoginButton>카카오톡으로 로그인</KakaoLoginButton>
+        <KakaoLoginButton onClick={kakaoLogin}>
+          카카오톡으로 로그인
+        </KakaoLoginButton>
         <LoginWrapper>
           <LoginLabel>이메일</LoginLabel>
           <LoginInput>

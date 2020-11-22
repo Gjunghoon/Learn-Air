@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./containers/Home";
@@ -10,6 +10,11 @@ import Mypage from "./containers/Mypage";
 import Review from "./containers/Review";
 
 const App = () => {
+  useEffect(() => {
+    window.Kakao.init("f656e406e85c1da4f68c86ee67f02280");
+    // SDK 초기화 여부를 판단합니다.
+    console.log(window.Kakao.isInitialized());
+  }, []);
   return (
     <Container>
       <Router>

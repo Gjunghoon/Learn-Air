@@ -33,7 +33,7 @@ const Class = () => {
   const history = useHistory();
   const applyClass = () => {
     window.location.href =
-      "https://zoom.us/j/99171751903?pwd=MlVrWTFyNDN0RVVZeTFDdHBEd3BQdz09";
+      "https://zoom.us/j/93254573815?pwd=VTVCaE5QUXpRbVIraFBOdWgyNXI0dz09";
   };
   return (
     <Container>

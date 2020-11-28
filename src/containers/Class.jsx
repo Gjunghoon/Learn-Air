@@ -82,6 +82,9 @@ const Class = () => {
           </div>
         </AnotherDescription>
         <ApplyButton onClick={applyClass}>지금 신청하기</ApplyButton>
+        <p style={{ textAlign: "center", margin: "1rem" }}>
+          (첫 신청시 맛보기 강의 15분이 제공됩니다)
+        </p>
       </Wrapper>
     </Container>
   );

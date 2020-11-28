@@ -28,7 +28,7 @@ const Review = () => {
         <Tutor>
           <div>
             <img
-              src="https://lh3.googleusercontent.com/proxy/CIA4ip7SM6A3FLqWoKrWZzbuJAWhyruR6wAbUZIbUe5iA6dXa3FnLD7Scp3q1FdGJriVu6_iEYlBAG1vFi9HUMMFCH-VkF_-iabDde9wwi2KhZK06pkWVcRB"
+              src="https://gjunghoon-tinder-clone.s3.ap-northeast-2.amazonaws.com/tae-woo.jpg"
               alt=""
             />
             <span>한태우 튜터</span>

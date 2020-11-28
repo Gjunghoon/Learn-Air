@@ -7,18 +7,22 @@ const categories = [
   {
     subtitle: "감성적인 마음을 적시는",
     title: "통기타 클래스",
+    onClick: "/class",
   },
   {
     subtitle: "노래방 인싸 되기",
     title: "보컬 클래스",
+    onClick: "/class2",
   },
   {
     subtitle: "내 손으로 만드는",
     title: "작곡 Tool 클래스",
+    onClick: "/class",
   },
   {
     subtitle: "힐링이 필요할 땐",
     title: "클래식 피아노",
+    onClick: "/class2",
   },
 ];
 
@@ -54,7 +58,7 @@ const Home = () => {
         </CategorySelectBox>
         <ClassWrapper>
           {categories.map((category, index) => (
-            <Class onClick={() => history.push("/class")}>
+            <Class onClick={() => history.push(category.onClick)}>
               <div>
                 <Subtitle>{category.subtitle}</Subtitle>
                 <Title>{category.title}</Title>

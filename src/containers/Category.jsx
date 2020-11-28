@@ -108,7 +108,7 @@ const Header = styled.div`
 `;
 const Wrapper = styled.div`
   width: 22.563rem;
-  height: 45rem;
+  height: 47rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   padding: 0.5rem;

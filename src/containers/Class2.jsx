@@ -10,17 +10,17 @@ import {
 } from "../assets";
 
 const sampleClass = {
-  subtitle: "서울종합예술실용학교 준비 과정",
-  title: "어쿠스틱 기타 연주",
-  score: "3.5",
-  reviewAmounts: 326,
-  originalPrice: 28000,
-  earlyBirdPrice: 25000,
-  tutorName: "한태우",
+  subtitle: "한양대학교 실용음악과 재학",
+  title: "보컬 및 요들 레슨",
+  score: "4.2",
+  reviewAmounts: 510,
+  originalPrice: 29000,
+  earlyBirdPrice: 26000,
+  tutorName: "김예진",
   tutorImageURL: "",
 };
 
-const Class = () => {
+const Class2 = () => {
   const {
     subtitle,
     title,
@@ -82,12 +82,15 @@ const Class = () => {
           </div>
         </AnotherDescription>
         <ApplyButton onClick={applyClass}>지금 신청하기</ApplyButton>
+        <p style={{ textAlign: "center", margin: "1rem" }}>
+          (첫 신청시 맛보기 강의 15분이 제공됩니다)
+        </p>
       </Wrapper>
     </Container>
   );
 };
 
-export default Class;
+export default Class2;
 
 const Container = styled.div`
   background-color: #5aa6c8;
@@ -131,7 +134,7 @@ const Wrapper = styled.div`
 `;
 
 const TutorImage = styled.div`
-  background-image: url("https://gjunghoon-tinder-clone.s3.ap-northeast-2.amazonaws.com/tae-woo.jpg");
+  background-image: url("https://gjunghoon-tinder-clone.s3.ap-northeast-2.amazonaws.com/yodel.png");
   width: 21.625rem;
   height: 16.188rem;
   background-size: cover;

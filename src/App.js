@@ -8,6 +8,7 @@ import Category from "./containers/Category";
 import Search from "./containers/Search";
 import Mypage from "./containers/Mypage";
 import Review from "./containers/Review";
+import Class2 from "./containers/Class2";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +28,9 @@ const App = () => {
           </Route>
           <Route exact path="/class">
             <Class />
+          </Route>
+          <Route exact path="/class2">
+            <Class2 />
           </Route>
           <Route exact path="/category">
             <Category />

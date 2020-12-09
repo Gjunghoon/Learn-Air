@@ -7,4 +7,4 @@
 - Back-end FrameWork: Express.js
 - Web Application Server: PM2
 - Web server: nginx
-- 배포 환경: AWS EC2
+- Infrastructure: AWS EC2

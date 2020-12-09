@@ -48,7 +48,7 @@ const Search = () => {
       <Wrapper>
         <SearchBox>기타</SearchBox>
         {tutors.map((tutor, index) => (
-          <Tutor onClick={() => history.push("/class")}>
+          <Tutor className="result" onClick={() => history.push("/class")}>
             <Img src={tutor.tutorImageURL} />
             <div>
               <p>{tutor.subtitle}</p>

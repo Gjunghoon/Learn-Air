@@ -45,7 +45,7 @@ const Category = () => {
         </div>
       </Header>
       <Wrapper>
-        <MainTutor onClick={() => history.push("/class")}>
+        <MainTutor id="best" onClick={() => history.push("/class")}>
           <div>
             <div></div>
             <span>어쿠스틱 기타 연주</span>

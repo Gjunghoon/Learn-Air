@@ -40,18 +40,26 @@ const Home = () => {
             history.push("/search");
           }}
         >
-          <input type="text" placeholder="어떤 수업을 원하시나요?" />
+          <input
+            id="search"
+            type="text"
+            placeholder="어떤 수업을 원하시나요?"
+          />
         </SearchBox>
         <Event>
           <EventMessage>Learn-Air가 쏜다! 회원가입 이벤트</EventMessage>
-          <Login onClick={() => history.push("/login")}>로그인 하기</Login>
+          <Login id="login" onClick={() => history.push("/login")}>
+            로그인 하기
+          </Login>
           <UndrawResearchingSVG />
         </Event>
       </Main>
       <Categories>
         <h2>온라인 레슨 카테고리</h2>
         <CategorySelectBox>
-          <Category onClick={() => history.push("/category")}>음악</Category>
+          <Category id="music" onClick={() => history.push("/category")}>
+            음악
+          </Category>
           <Category onClick={() => history.push("/category")}>학습</Category>
           <Category onClick={() => history.push("/category")}>회화</Category>
           <Category onClick={() => history.push("/category")}>디자인</Category>

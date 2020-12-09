@@ -6,8 +6,13 @@ import { LeftArrowSVG, HamburgerSVG } from "../assets";
 const Login = () => {
   const history = useHistory();
   const kakaoLogin = () => {
+    console.log(process.env);
     window.Kakao.Auth.authorize({
-      redirectUri: "http://3.35.134.21:3001/kakao",
+      redirectUri: `${
+        process.env.NODE_ENV === "production"
+          ? "http://3.35.134.21:3001/kakao"
+          : "http://localhost:3001/kakao"
+      }`,
     });
   };
 
@@ -27,7 +32,7 @@ const Login = () => {
           <div>간편하게 로그인하고</div>
           <div>다양한 튜터를 만나보세요</div>
         </Message>
-        <KakaoLoginButton onClick={kakaoLogin}>
+        <KakaoLoginButton id="kakaoLogin" onClick={kakaoLogin}>
           카카오톡으로 로그인
         </KakaoLoginButton>
         <LoginWrapper>
